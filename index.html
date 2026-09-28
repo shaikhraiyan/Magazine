@@ -1,100 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BROCAS' Broadcast | Digital Archive</title>
+<meta charset="UTF-8">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #222;
-        }
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: #17365d;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
+<title>BROCAS' Broadcast | Digital Archive</title>
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
+<style>
 
-        header p {
-            font-size: 18px;
-        }
+/* ---------- GENERAL ---------- */
 
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        .issue {
-            background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f4ee;
+    color: #222;
+}
 
-        .issue h2 {
-            color: #17365d;
-        }
+/* ---------- HEADER ---------- */
 
-        .button {
-            display: inline-block;
-            background: #17365d;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
+header {
+    background: #172d3d;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #17365d;
-            color: white;
-            margin-top: 50px;
-        }
-    </style>
+header h1 {
+    margin: 0;
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* ---------- MAIN ---------- */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+/* ---------- EDITION ---------- */
+
+.featured {
+    background: white;
+    padding: 55px 30px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.featured h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.featured p {
+    font-family: Arial, sans-serif;
+    color: #666;
+    font-size: 17px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #172d3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* ---------- SECTION ---------- */
+
+.section {
+    margin-top: 60px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* ---------- CATEGORIES ---------- */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.category h3 {
+    margin-top: 0;
+}
+
+/* ---------- LANGUAGES ---------- */
+
+.languages {
+    text-align: center;
+    background: #172d3d;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+.languages span {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 18px;
+}
+
+/* ---------- ARCHIVE ---------- */
+
+.archive {
+    text-align: center;
+}
+
+.archive a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: white;
+    color: #172d3d;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #172d3d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 70px;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        padding: 40px 20px;
+    }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
+
 <header>
-    <h1>BROCAS' Broadcast</h1>
+
+<h1>BROCAS' Broadcast</h1>
+
 <p>Digital Multilingual Archive</p>
+
 </header>
+
+
+<!-- MAIN CONTENT -->
 
 <div class="container">
 
-    <div class="issue">
-        <h2>2026 Edition</h2>
 
-        <p>
-            Explore articles, stories, poems and their translations
-            from the 2026 college magazine.
-        </p>
+<!-- FEATURED ISSUE -->
 
-        <a class="button" href="2026.html">
-            Explore 2026 Edition
-        </a>
-    </div>
+<section class="featured">
+
+<h2>2026 Edition</h2>
+
+<p>
+Explore the latest edition of BROCAS' Broadcast,
+including articles, stories, poetry and translations.
+</p>
+
+<a class="button" href="2026.html">
+
+EXPLORE THE 2026 ISSUE →
+
+</a>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section">
+
+<h2>Explore Articles</h2>
+
+
+<div class="categories">
+
+
+<div class="category">
+
+<h3>Research</h3>
+
+<p>
+Research, science and academic writing.
+</p>
 
 </div>
 
+
+<div class="category">
+
+<h3>Culture</h3>
+
+<p>
+Culture, heritage and society.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<h3>Student Life</h3>
+
+<p>
+Stories and experiences from campus life.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<h3>Poetry</h3>
+
+<p>
+Poems and literary works.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<h3>Creative Writing</h3>
+
+<p>
+Stories, essays and creative works.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<h3>Other</h3>
+
+<p>
+Explore more from the magazine.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- LANGUAGES -->
+
+<section class="section">
+
+<h2>Explore by Language</h2>
+
+<div class="languages">
+
+<span>English</span>
+
+<span>অসমীয়া</span>
+
+<span>हिन्दी</span>
+
+</div>
+
+</section>
+
+
+<!-- ARCHIVE -->
+
+<section class="section archive">
+
+<h2>Magazine Archive</h2>
+
+<a href="2026.html">2026 Edition</a>
+
+<a href="#">Future Editions</a>
+
+</section>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
 <footer>
-    BROCAS' Broadcast Digital Archive
+
+<p>
+<strong>BROCAS' Broadcast</strong>
+</p>
+
+<p>
+Digital Multilingual Archive
+</p>
+
+<p>
+© 2026
+</p>
+
 </footer>
 
+
 </body>
+
 </html>
