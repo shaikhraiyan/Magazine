@@ -8,16 +8,14 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Tumara Toh Sahi Hai Yaar | BROCAS' Broadcast</title>
+<title>TUMARA TOH SAHI HAI YAAR | BROCAS' Broadcast</title>
 
 <style>
 
+/* ---------- GENERAL ---------- */
+
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -25,55 +23,51 @@ body {
     background: #f7f4ee;
     color: #222;
     font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.8;
 }
 
-
-/* HEADER */
+/* ---------- HEADER ---------- */
 
 header {
     background: #172d3d;
     color: white;
-    text-align: center;
     padding: 55px 20px;
+    text-align: center;
 }
 
-.magazine-name {
+header .magazine {
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 header h1 {
     max-width: 900px;
-    margin: auto;
-    font-size: 44px;
-    line-height: 1.2;
+    margin: 0 auto;
+    font-size: 52px;
+    line-height: 1.15;
 }
 
-.issue {
-    margin-top: 18px;
+header .edition {
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    opacity: 0.85;
+    margin-top: 18px;
+    font-size: 16px;
+    opacity: 0.9;
 }
 
-
-/* MAIN */
+/* ---------- PAGE ---------- */
 
 .container {
     max-width: 900px;
-    margin: 45px auto;
-    padding: 0 25px;
+    margin: 0 auto;
+    padding: 35px 25px 70px;
 }
 
-
-/* BACK */
+/* ---------- BACK LINK ---------- */
 
 .back {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .back a {
@@ -83,81 +77,84 @@ header h1 {
     font-weight: bold;
 }
 
-
-/* ARTICLE INFORMATION */
+/* ---------- ARTICLE INFO ---------- */
 
 .article-info {
     background: white;
-    padding: 25px 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    margin-bottom: 35px;
+}
+
+.article-info p {
+    margin: 8px 0;
     font-family: Arial, sans-serif;
     color: #555;
 }
 
-.article-info strong {
-    color: #172d3d;
-}
+/* ---------- TRANSLATION NOTICE ---------- */
 
-
-/* TRANSLATION NOTICE */
-
-.notice {
-    background: #172d3d;
-    color: white;
-    padding: 25px 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
+.translation-notice {
+    background: #eef3f5;
+    border-left: 5px solid #172d3d;
+    padding: 22px 25px;
+    margin-bottom: 45px;
+    border-radius: 6px;
     font-family: Arial, sans-serif;
+    color: #444;
+    line-height: 1.6;
 }
 
-.notice strong {
-    font-size: 18px;
-}
-
-
-/* ARTICLE */
+/* ---------- ARTICLE ---------- */
 
 .article {
     background: white;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    padding: 55px 60px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
 }
+
+/* ---------- ARTICLE HEADING ---------- */
 
 .article h2 {
+    font-size: 34px;
     color: #172d3d;
-    font-size: 30px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 12px;
     margin-top: 0;
+    margin-bottom: 40px;
 }
+
+/* ---------- ARTICLE TEXT ---------- */
 
 .article p {
-    font-size: 18px;
-    margin-bottom: 22px;
+    font-size: 20px;
+    line-height: 1.9;
+    margin: 0 0 25px;
 }
 
+/* ---------- QUOTATIONS ---------- */
 
-/* FOOTER NAVIGATION */
-
-.bottom-navigation {
-    text-align: center;
-    margin: 45px 0;
+.article blockquote {
+    margin: 35px 0;
+    padding: 20px 25px;
+    border-left: 4px solid #172d3d;
+    background: #f7f4ee;
+    font-size: 21px;
+    line-height: 1.7;
+    font-style: italic;
 }
 
-.bottom-navigation a {
-    display: inline-block;
-    background: #172d3d;
-    color: white;
-    text-decoration: none;
-    padding: 13px 24px;
-    border-radius: 6px;
-    font-family: Arial, sans-serif;
+/* ---------- P.S. ---------- */
+
+.ps {
+    margin-top: 45px !important;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+    color: #666;
 }
 
-
-/* FOOTER */
+/* ---------- FOOTER ---------- */
 
 footer {
     background: #172d3d;
@@ -167,21 +164,45 @@ footer {
     font-family: Arial, sans-serif;
 }
 
+footer p {
+    margin: 6px;
+}
 
-/* MOBILE */
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 700px) {
 
+    header {
+        padding: 45px 20px;
+    }
+
     header h1 {
-        font-size: 33px;
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 25px 15px 50px;
     }
 
     .article {
-        padding: 28px 22px;
+        padding: 35px 25px;
+    }
+
+    .article h2 {
+        font-size: 28px;
     }
 
     .article p {
-        font-size: 17px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .article blockquote {
+        font-size: 18px;
+    }
+
+    .article-info {
+        padding: 25px;
     }
 
 }
@@ -194,9 +215,11 @@ footer {
 <body>
 
 
+<!-- HEADER -->
+
 <header>
 
-<div class="magazine-name">
+<div class="magazine">
 BROCAS' Broadcast
 </div>
 
@@ -204,7 +227,7 @@ BROCAS' Broadcast
 TUMARA TOH SAHI HAI YAAR
 </h1>
 
-<div class="issue">
+<div class="edition">
 2026 Edition
 </div>
 
@@ -214,50 +237,69 @@ TUMARA TOH SAHI HAI YAAR
 <div class="container">
 
 
+<!-- BACK -->
+
 <div class="back">
 
-<a href="../2026.html">
+<a href="index.html?v=3">
 ← Back to 2026 Edition
 </a>
 
 </div>
 
 
+<!-- ARTICLE INFORMATION -->
+
 <div class="article-info">
 
-<strong>Author:</strong> Aakarsh Upadhyay<br>
+<p>
+<strong>Author:</strong> Aakarsh Upadhyay
+</p>
 
-<strong>Original publication:</strong>
-BROCAS' Broadcast · 2026<br>
+<p>
+<strong>Edition:</strong> BROCAS' Broadcast · 2026
+</p>
 
-<strong>Article type:</strong>
-Long-form article
+<p>
+<strong>Article type:</strong> Personal Essay
+</p>
+
+<p>
+<strong>Original language:</strong> Hindi / Hinglish
+</p>
+
+<p>
+<strong>Translation:</strong> English translation
+</p>
 
 </div>
 
 
-<div class="notice">
+<!-- TRANSLATION NOTICE -->
+
+<div class="translation-notice">
 
 <strong>Digital Translation Archive</strong>
 
 <br><br>
 
-This page is intended to provide the complete
-English translation of the article published
-in the physical edition of BROCAS' Broadcast.
+This page is part of the BROCAS' Broadcast Digital Translation
+Archive and is intended to preserve the complete English
+translation of the original magazine article.
 
 <br><br>
 
-<strong>Sample version:</strong>
-The current page contains the supplied article text.
-The final English translation will replace this text
-when provided by the translator.
+<strong>Current status:</strong>
+The final English translation is yet to be inserted.
+The original supplied article text is displayed below for
+archival preparation.
 
 </div>
 
 
-<article class="article">
+<!-- ARTICLE -->
 
+<article class="article">
 
 <h2>
 TUMARA TOH SAHI HAI YAAR
@@ -272,10 +314,9 @@ neighbour, or that one uncle who meets you after one year and
 still asks, “Toh beta, doctor ban gaye?”
 </p>
 
-
-<p>
+<blockquote>
 “Bas uncle, thoda sa aur.”
-</p>
+</blockquote>
 
 
 <p>
@@ -287,298 +328,212 @@ about whether this vast amount of information was ever meant to
 be retained in these puny brains of humans.
 </p>
 
-
 <p>
 This is about something else.
 </p>
-
 
 <p>
 This is about being a Gen-Z medical student. Because being Gen Z
 already feels like living life in fast forward.
 </p>
 
-
 <p>
 Everyone is travelling, making reels, going to concerts and
-finding new cafés. Everyone is dating, gaming, creating content,
-doing photography, going on random trips and somehow managing
-to have a life outside their profession.
+finding new cafés.
 </p>
 
-
 <p>
-And then there is us. We open Instagram at 1:17 a.m. and see
-someone our age saying,
+Everyone is dating, gaming, creating content, doing photography,
+going on random trips and somehow managing to have a life outside
+their profession. And then there is us. We open Instagram at
+1:17 a.m. and see someone our age saying,
 </p>
 
-
-<p>
+<blockquote>
 “Guys, thanks to Mahadev, I’m finally an American citizen now!”
+</blockquote>
+
+<p>
 What? What the fuss?
 </p>
 
-
-<p>
+<blockquote>
 “American citizenship?”
-</p>
-
+</blockquote>
 
 <p>
 And here it’s me, jisne abhi tak capital bhi ni dekha, only
 dreamt of securing a seat at AIIMS Delhi.
 </p>
 
-
 <p>
 One day I’m definitely going to throw away my phone if it keeps
 on reminding me of my postponed life "coming soon”.
 </p>
 
-
 <p>
 And no, I am not saying medicine is terrible. It isn’t.
-Most of us genuinely want to become good doctors. We chose this.
-And honestly, we are proud of it.
 </p>
-
 
 <p>
-There is something special about wearing that white coat.
-About knowing that one day, someone might come to you at the
-worst point of their life and trust you to make things better.
+Most of us genuinely want to become good doctors. We chose this.
+And honestly, we are proud of it. There is something special
+about wearing that white coat. About knowing that one day,
+someone might come to you at the worst point of their life and
+trust you to make things better.
 </p>
-
 
 <p>
 That part is worth it.
 </p>
 
-
 <p>
-But sometimes, we do get tired of the price we have to pay
-for choosing it.
+But sometimes, we do get tired of the price we have to pay for
+choosing it.
 </p>
 
-
 <p>
-Because while everyone else seems to be entering adulthood,
-we are still standing at the entrance with a stethoscope in
-one hand and an admit card in the other.
+Because while everyone else seems to be entering adulthood, we
+are still standing at the entrance with a stethoscope in one hand
+and an admit card in the other.
 </p>
-
 
 <p>
 Take money, for example. That damn friend of 'tumara to Sahi h
 yaar' had started earning the amount which I might earn after
-clearing INICET and yes, Pranam to Modi Ji for 8th pay
-commission, if it comes into effect.
+clearing INICET and yes, Pranam to Modi Ji for 8th pay commission,
+if it comes into effect. For now the greatest investment made by
+me is the Marrow subscription that I bought last year.
 </p>
 
-
-<p>
-For now the greatest investment made by me is the Marrow
-subscription that I bought last year.
-</p>
-
-
-<p>
+<blockquote>
 “Papa: UPI kar du?”
-</p>
-
+</blockquote>
 
 <p>
 Many of us are still being financially supported by the same
-people who have been paying for our lives since childhood.
-And yes, we know how lucky we are.
+people who have been paying for our lives since childhood. And
+yes, we know how lucky we are.
 </p>
-
 
 <p>
 But there is still a small dream that a lot of young men have,
-i.e. buying a bike with his own money.
+i.e. buying a bike with his own money. Not because we desperately
+need another bike. But because that bike would quietly say,
 </p>
 
-
-<p>
-Not because we desperately need another bike. But because that
-bike would quietly say,
-</p>
-
-
-<p>
+<blockquote>
 “I bought this.”
-</p>
-
+</blockquote>
 
 <p>
 No father’s money. No mother’s savings. No “I’ll pay you back.”
 </p>
 
-
 <p>
-Just you, your salary and probably an EMI that will follow you
-for the next three years.
+Just you, your salary and probably an EMI that will follow you for
+the next three years. For a medical student, that moment feels
+very far away.
 </p>
-
-
-<p>
-For a medical student, that moment feels very far away.
-</p>
-
 
 <p>
 At this point, the bike is no longer a vehicle; it is a
 long-term academic project.
 </p>
 
-
 <p>
-And then there are our parents. They have dreams for us that
-we didn’t exactly ask for.
+And then there are our parents. They have dreams for us that we
+didn’t exactly ask for. They want us to become successful. We want
+that too. They want us to have a good marriage, a nice house,
+financial security and a respectable life. Honestly, we want most
+of that too. But who knows what lies in the future, a good/stable
+marriage or a 'BLUE DRUM'?
 </p>
-
-
-<p>
-They want us to become successful. We want that too. They want
-us to have a good marriage, a nice house, financial security
-and a respectable life.
-</p>
-
-
-<p>
-Honestly, we want most of that too. But who knows what lies
-in the future, a good/stable marriage or a 'BLUE DRUM'?
-</p>
-
 
 <p>
 And then there’s the beautiful little monster called the
-competitive exam.
+competitive exam. We don’t just study medicine anymore. We study
+medicine while thinking about the next exam. Every good day has
+an asterisk.
 </p>
 
-
-<p>
-We don’t just study medicine anymore. We study medicine while
-thinking about the next exam. Every good day has an asterisk.
-</p>
-
-
-<p>
+<blockquote>
 “I studied really well today.” Nice. “But how much of this will
 actually help in INI-CET?”
-</p>
-
+</blockquote>
 
 <p>
 Every bad day has an even bigger asterisk.
 </p>
 
-
-<p>
-“I wasted the whole day." Congratulations. “Now what about
+<blockquote>
+“I wasted the whole day.” Congratulations. “Now what about
 INI-CET?”
-</p>
-
+</blockquote>
 
 <p>
 The exam hasn’t even happened yet, and somehow it has already
 ruined several evenings.
 </p>
 
-
 <p>
-And the funniest part? We are preparing for an exam whose
-reward is…
+And the funniest part? We are preparing for an exam whose reward
+is…
 </p>
 
-
-<p>
+<blockquote>
 “MORE YEARS OF STUDYING”
-</p>
-
+</blockquote>
 
 <p>
 It’s almost like the game designers forgot to add the ending.
 </p>
 
-
 <p>
-MBBS → NEET-PG/INI-CET → Residency → Fellowship →
-Superspeciality → Consultant.
+MBBS → NEET-PG/INI-CET → Residency → Fellowship → Superspeciality
+→ Consultant.
 </p>
-
 
 <p>
 At some point, someone should probably ask.
 </p>
 
-
-<p>
+<blockquote>
 “When exactly do we unlock the life expansion pack?”
-</p>
-
+</blockquote>
 
 <p>
 Dating deserves its own paragraph.
 </p>
 
-
 <p>
-Because apparently being a medical student is not enough of
-a full-time commitment. You are also expected to maintain
-a relationship.
+Because apparently being a medical student is not enough of a
+full-time commitment. You are also expected to maintain a
+relationship. Now imagine this.
 </p>
 
+<blockquote>
+“Hey, want to go out tonight?” “Sure.”<br>
+“When?” “After posting.”<br>
+“Okay, tomorrow?” “Unit test.”<br>
+“Weekend?” “Family function.”<br>
+“Next week?” “Pre-PG preparation.”
+</blockquote>
 
-<p>
-Now imagine this.
-</p>
-
-
-<p>
-“Hey, want to go out tonight?”
-“Sure.”
-</p>
-
-
-<p>
-“When?”
-</p>
-
-
-<p>
-“After posting.”
-“Okay, tomorrow?”
-“Unit test.”
-“Weekend?”
-“Family function.”
-“Next week?”
-“Pre-PG preparation.”
-</p>
-
-
-<p>
+<blockquote>
 “Okay. When are you actually free?”
-</p>
-
-
-<p>
-And then you realise you have been in a relationship with
-your timetable for six years.
-</p>
-
+</blockquote>
 
 <p>
-At least the timetable is toxic but consistent.
+And then you realise you have been in a relationship with your
+timetable for six years. At least the timetable is toxic but
+consistent.
 </p>
-
 
 <p>
 And perhaps the funniest part is that none of this is visible
 from the outside.
 </p>
-
 
 <p>
 To everyone else, you’re doing great. You’re a medical student.
@@ -586,120 +541,80 @@ You’re going to become a doctor. You’ll earn well. You’ll be
 respected. You’ll have a stable career.
 </p>
 
-
 <p>
-Basically, you’ve “made it". Hushhhh
+Basically, you’ve “made it”. Hushhhh
 </p>
-
 
 <p>
 What I think maybe the real problem is not that we are missing
-out. Maybe it is that we are constantly aware that we are
-missing out.
+out. Maybe it is that we are constantly aware that we are missing
+out.
 </p>
 
-
 <p>
-Gen millennials didn’t have Instagram showing them what
-everyone else was doing at two in the morning. We do.
-We compare them.
+Gen millennials didn’t have Instagram showing them what everyone
+else was doing at two in the morning. We do. We compare them.
 </p>
 
-
 <p>
-Someone is somehow 23, financially independent, travelling
-the world and maintaining visible abs.
+Someone is somehow 23, financially independent, travelling the
+world and maintaining visible abs.
 </p>
 
-
 <p>
-And we are sitting in the library at 11:45 p.m. trying to
-remember whether the answer was hydrocele or hernia.
+And we are sitting in the library at 11:45 p.m. trying to remember
+whether the answer was hydrocele or hernia.
 </p>
 
-
 <p>
-social media has given our generation the unique privilege
-of feeling behind while we are still running.
+social media has given our generation the unique privilege of
+feeling behind while we are still running.
 </p>
 
-
 <p>
-But maybe this is the part we don’t talk about enough.
-Maybe we are not actually behind. Maybe our timelines are
-just different.
+But maybe this is the part we don’t talk about enough. Maybe we
+are not actually behind. Maybe our timelines are just different.
+The friend who started earning at 21 may have reached financial
+independence earlier; we may reach it later. The person who
+travelled at 20 may have memories we don’t have, but we may have
+experiences they don’t.
 </p>
 
-
 <p>
-The friend who started earning at 21 may have reached
-financial independence earlier; we may reach it later.
-</p>
-
-
-<p>
-The person who travelled at 20 may have memories we don’t
-have, but we may have experiences they don’t.
-</p>
-
-
-<p>
-The person who bought a bike at 22 may have bought it with
-his first salary.
-</p>
-
-
-<p>
-Maybe we will buy ours at 28, with our own name on the payslip.
-And maybe that will make it even more special.
-</p>
-
-
-<p>
+The person who bought a bike at 22 may have bought it with his
+first salary. Maybe we will buy ours at 28, with our own name on
+the payslip. And maybe that will make it even more special.
 Because it was never about the bike.
 </p>
 
-
 <p>
-Maybe one day, we might actually become everything we spent
-our youth preparing to become.
+Maybe one day, we might actually become everything we spent our
+youth preparing to become.
 </p>
-
 
 <p>
 And when that day comes, I just hope we don’t look back and
-realise that we were so busy preparing for life that we forgot
-to have one.
+realise that we were so busy preparing for life that we forgot to
+have one.
 </p>
 
-
 <p>
-Even though I hope if you ask the person standing outside all
-of this, he will probably still look at me, smile and say,
+Even though I hope if you ask the person standing outside all of
+this, he will probably still look at me, smile and say,
 </p>
 
-
-<p>
+<blockquote>
 “Tumara toh sahi hai yaar.”
-</p>
+</blockquote>
 
 
-<p>
-<strong>P.S.</strong> written after midnight discussions with
-V.K. Veer, Pandit Boy and ninja hattori
+<p class="ps">
+P.S. written after midnight discussions with V.K. Veer,
+Pandit Boy and ninja hattori
 </p>
 
 
 </article>
-
-
-<div class="bottom-navigation">
-
-<a href="../2026.html">
-← Back to 2026 Edition
-</a>
-
-</div>
 
 
 </div>
@@ -707,11 +622,13 @@ V.K. Veer, Pandit Boy and ninja hattori
 
 <footer>
 
+<p>
 <strong>BROCAS' Broadcast</strong>
+</p>
 
-<br>
-
+<p>
 2026 Digital Translation Archive
+</p>
 
 </footer>
 
