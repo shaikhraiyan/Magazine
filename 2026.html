@@ -7,64 +7,174 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>2026 Edition | College Magazine</title>
+<title>2026 Edition | BROCAS' Broadcast</title>
 
 <style>
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: #f7f5f0;
     color: #222;
 }
 
+/* HEADER */
+
 header {
-    background: #17365d;
-    color: white;
-    padding: 45px 20px;
+    background: #f7f5f0;
+    color: #222;
+    padding: 55px 20px 35px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 40px;
+    font-family: Georgia, serif;
+    font-size: 52px;
 }
+
+header p {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* MAIN CONTAINER */
 
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
 }
 
-.article {
-    background: white;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
-
-.article h2 {
-    color: #17365d;
-}
-
-.button {
-    display: inline-block;
-    background: #17365d;
-    color: white;
-    padding: 11px 18px;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 10px;
-}
+/* HOME LINK */
 
 .home {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .home a {
     color: #17365d;
     text-decoration: none;
+    font-weight: bold;
+}
+
+/* ARTICLE GRID */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* ARTICLE CARD */
+
+.article-card {
+    background: white;
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* CATEGORY */
+
+.category {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* TITLE */
+
+.article-card h2 {
+    font-family: Georgia, serif;
+    color: #172f40;
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 35px;
+}
+
+/* DESCRIPTION */
+
+.article-card p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* AUTHOR */
+
+.author {
+    font-size: 17px !important;
+    margin-top: 0;
+}
+
+/* BUTTON */
+
+.read {
+    display: inline-block;
+    width: fit-content;
+    background: #173444;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.read:hover {
+    background: #244b60;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .article-card {
+        padding: 30px;
+        min-height: auto;
+    }
+
+    .article-card h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .article-card p {
+        font-size: 18px;
+    }
+
 }
 
 </style>
@@ -74,11 +184,12 @@ header h1 {
 
 <body>
 
+
 <header>
 
-<h1>2026 Edition</h1>
+<h1>Articles</h1>
 
-<p>College Magazine</p>
+<p>BROCAS' Broadcast · 2026 Edition</p>
 
 </header>
 
@@ -93,24 +204,35 @@ header h1 {
 </div>
 
 
-<div class="article">
+<div class="articles">
 
-<h2>The Story of the Brahmaputra</h2>
+
+<!-- BRAHMAPUTRA -->
+
+<div class="article-card">
+
+<div class="category">
+Culture
+</div>
+
+<h2>
+The Story of the Brahmaputra
+</h2>
 
 <p>
-
-An article exploring the history, culture and significance
+An exploration of the history, culture and significance
 of the Brahmaputra.
-
 </p>
 
-<a class="button" href="articles/article-1.html">
+<a class="read"
+href="articles/brahmaputra.html">
 
 Read Article →
 
 </a>
 
 </div>
+
 
 <!-- TUMARA TOH SAHI HAI YAAR -->
 
@@ -120,9 +242,9 @@ Read Article →
 Personal Essay
 </div>
 
-<h3>
+<h2>
 TUMARA TOH SAHI HAI YAAR
-</h3>
+</h2>
 
 <p>
 A long-form reflection on life as a Gen-Z medical student,
@@ -130,7 +252,7 @@ the pressure of competitive examinations, financial
 independence, relationships and the feeling of falling behind.
 </p>
 
-<p>
+<p class="author">
 <strong>Author:</strong> Aakarsh Upadhyay
 </p>
 
@@ -142,18 +264,26 @@ Read English Translation →
 </a>
 
 </div>
-    
-<div class="article">
 
-<h2>Article Two</h2>
+
+<!-- RESEARCH -->
+
+<div class="article-card">
+
+<div class="category">
+Research
+</div>
+
+<h2>
+Research Article
+</h2>
 
 <p>
-
-Short description of the second article.
-
+A space for research and scientific writing
+from the 2026 edition.
 </p>
 
-<a class="button" href="#">
+<a class="read" href="#">
 
 Read Article →
 
@@ -162,17 +292,50 @@ Read Article →
 </div>
 
 
-<div class="article">
+<!-- STUDENT LIFE -->
 
-<h2>Article Three</h2>
+<div class="article-card">
+
+<div class="category">
+Student Life
+</div>
+
+<h2>
+Student Life
+</h2>
 
 <p>
-
-Short description of the third article.
-
+Stories and experiences from student life
+and campus.
 </p>
 
-<a class="button" href="#">
+<a class="read" href="#">
+
+Read Article →
+
+</a>
+
+</div>
+
+
+<!-- POETRY -->
+
+<div class="article-card">
+
+<div class="category">
+Poetry
+</div>
+
+<h2>
+Poetry Collection
+</h2>
+
+<p>
+Poems and literary works from the 2026
+magazine.
+</p>
+
+<a class="read" href="#">
 
 Read Article →
 
@@ -182,6 +345,17 @@ Read Article →
 
 
 </div>
+
+
+</div>
+
+
+<footer>
+
+BROCAS' Broadcast · 2026 Digital Archive
+
+</footer>
+
 
 </body>
 
