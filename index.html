@@ -8,7 +8,7 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>2026 Edition | BROCAS' Broadcast</title>
+<title>BROCAS' Broadcast | Digital Archive</title>
 
 <style>
 
@@ -31,19 +31,19 @@ header {
     background: #172d3d;
     color: white;
     text-align: center;
-    padding: 55px 20px;
+    padding: 70px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 46px;
+    font-size: 52px;
     letter-spacing: 2px;
 }
 
 header p {
     font-family: Arial, sans-serif;
-    font-size: 17px;
-    margin-top: 12px;
+    font-size: 18px;
+    margin-top: 15px;
 }
 
 /* ---------- CONTAINER ---------- */
@@ -51,115 +51,136 @@ header p {
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 45px 25px;
-}
-
-/* ---------- NAVIGATION ---------- */
-
-.back {
-    margin-bottom: 30px;
-}
-
-.back a {
-    color: #172d3d;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    padding: 50px 25px;
 }
 
 /* ---------- INTRO ---------- */
 
 .intro {
     background: white;
-    padding: 40px;
-    border-radius: 14px;
+    padding: 50px 40px;
+    border-radius: 16px;
     text-align: center;
     box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
 .intro h2 {
-    font-size: 34px;
+    font-size: 38px;
     margin-top: 0;
 }
 
 .intro p {
     font-family: Arial, sans-serif;
     color: #666;
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-/* ---------- SECTION ---------- */
+/* ---------- FEATURED EDITION ---------- */
 
-.section {
+.featured {
     margin-top: 55px;
 }
 
 .section-title {
-    font-size: 30px;
     text-align: center;
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
-/* ---------- ARTICLE GRID ---------- */
-
-.articles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-.article-card {
+.edition-card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
-.article-card h3 {
+.edition-card h3 {
+    font-size: 34px;
     color: #172d3d;
-    font-size: 24px;
     margin-top: 0;
 }
 
-.category {
+.edition-card p {
     font-family: Arial, sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #777;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-.article-card p {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #555;
-}
+/* ---------- BUTTON ---------- */
 
 .read {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
+    margin-top: 15px;
+    padding: 13px 24px;
     background: #172d3d;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
 }
 
-/* ---------- LANGUAGES ---------- */
+.read:hover {
+    background: #24475b;
+}
 
-.languages {
+/* ---------- EXPLORE ---------- */
+
+.explore {
+    margin-top: 65px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+}
+
+.category-card h3 {
+    color: #172d3d;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.category-card p {
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+
+/* ---------- ARCHIVE ---------- */
+
+.archive {
+    margin-top: 65px;
+}
+
+.archive-card {
     background: #172d3d;
     color: white;
-    padding: 35px;
+    padding: 40px;
+    border-radius: 14px;
     text-align: center;
-    border-radius: 12px;
 }
 
-.languages span {
-    display: inline-block;
-    margin: 8px 15px;
-    font-size: 18px;
+.archive-card h3 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.archive-card p {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -169,7 +190,7 @@ footer {
     color: white;
     text-align: center;
     padding: 35px 20px;
-    margin-top: 60px;
+    margin-top: 70px;
     font-family: Arial, sans-serif;
 }
 
@@ -178,15 +199,19 @@ footer {
 @media (max-width: 700px) {
 
     header h1 {
-        font-size: 34px;
+        font-size: 38px;
     }
 
-    .articles {
-        grid-template-columns: 1fr;
+    .container {
+        padding: 35px 20px;
     }
 
     .intro {
-        padding: 30px 20px;
+        padding: 35px 25px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -205,155 +230,152 @@ footer {
 
 <h1>BROCAS' Broadcast</h1>
 
-<p>2026 Edition</p>
+<p>Digital Archive</p>
 
 </header>
 
 
-<!-- MAIN -->
-
 <div class="container">
 
 
-<!-- BACK BUTTON -->
-
-<div class="back">
-
-<a href="index.html">
-← Back to BROCAS' Broadcast
-</a>
-
-</div>
-
-
-<!-- INTRODUCTION -->
+<!-- INTRO -->
 
 <section class="intro">
 
-<h2>2026 Edition</h2>
+<h2>Welcome to BROCAS' Broadcast</h2>
 
 <p>
-Welcome to the digital archive of the 2026 edition
-of BROCAS' Broadcast.
-</p>
-
-<p>
-Explore articles, research, culture, student life,
-poetry and creative writing from this year's magazine.
+The digital archive of the college magazine,
+preserving articles, research, culture, student life,
+poetry and creative writing.
 </p>
 
 </section>
 
 
-<!-- ARTICLES -->
+<!-- FEATURED EDITION -->
 
-<section class="section">
+<section class="featured">
 
 <h2 class="section-title">
-Articles
+Latest Edition
 </h2>
 
-
-<div class="articles">
-
-
-<!-- ARTICLE 1 -->
-
-<div class="article-card">
-
-<div class="category">
-Culture
-</div>
+<div class="edition-card">
 
 <h3>
-The Story of the Brahmaputra
+2026 Edition
 </h3>
 
 <p>
-An exploration of the history, culture and significance
-of the Brahmaputra.
+Explore the articles and creative works
+published in the 2026 edition of
+BROCAS' Broadcast.
 </p>
 
 <a class="read"
-href="articles/brahmaputra.html">
+href="2026.html">
 
-Read Article →
+Explore 2026 Edition →
 
 </a>
 
 </div>
 
+</section>
 
-<!-- ARTICLE 2 -->
 
-<div class="article-card">
+<!-- EXPLORE -->
 
-<div class="category">
+<section class="explore">
+
+<h2 class="section-title">
+Explore Articles
+</h2>
+
+<div class="categories">
+
+
+<div class="category-card">
+
+<h3>
 Research
-</div>
-
-<h3>
-Research Article
 </h3>
 
 <p>
-A space for research and scientific writing
-from the 2026 edition.
+Scientific writing and research
+from the magazine.
 </p>
 
-<a class="read" href="#">
-Read Article →
+</div>
 
-</a>
+
+<div class="category-card">
+
+<h3>
+Culture
+</h3>
+
+<p>
+Stories, traditions and cultural
+explorations.
+</p>
 
 </div>
 
 
-<!-- ARTICLE 3 -->
-
-<div class="article-card">
-
-<div class="category">
-Student Life
-</div>
+<div class="category-card">
 
 <h3>
 Student Life
 </h3>
 
 <p>
-Stories and experiences from student life
-and campus.
+Experiences and stories from
+campus life.
 </p>
-
-<a class="read" href="#">
-Read Article →
-
-</a>
 
 </div>
 
 
-<!-- ARTICLE 4 -->
+<div class="category-card">
 
-<div class="article-card">
-
-<div class="category">
+<h3>
 Poetry
-</div>
-
-<h3>
-Poetry Collection
 </h3>
 
 <p>
-Poems and literary works from the 2026 magazine.
+Poems and literary works
+from the magazine.
 </p>
 
-<a class="read" href="#">
-Read Article →
+</div>
 
-</a>
+
+<div class="category-card">
+
+<h3>
+Creative Writing
+</h3>
+
+<p>
+Essays, reflections and
+creative works.
+</p>
+
+</div>
+
+
+<div class="category-card">
+
+<h3>
+More
+</h3>
+
+<p>
+Explore more articles from
+BROCAS' Broadcast.
+</p>
 
 </div>
 
@@ -363,21 +385,31 @@ Read Article →
 </section>
 
 
-<!-- LANGUAGES -->
+<!-- ARCHIVE -->
 
-<section class="section">
+<section class="archive">
 
 <h2 class="section-title">
-Available Languages
+Magazine Archive
 </h2>
 
-<div class="languages">
+<div class="archive-card">
 
-<span>English</span>
+<h3>
+2026 Edition
+</h3>
 
-<span>অসমীয়া</span>
+<p>
+The first digital edition of
+BROCAS' Broadcast.
+</p>
 
-<span>हिन्दी</span>
+<a class="read"
+href="2026.html">
+
+View 2026 Archive →
+
+</a>
 
 </div>
 
@@ -396,7 +428,7 @@ Available Languages
 </p>
 
 <p>
-2026 Digital Archive
+Digital Magazine Archive
 </p>
 
 </footer>
