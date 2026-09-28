@@ -12,7 +12,9 @@ content="width=device-width, initial-scale=1.0">
 
 <style>
 
-/* ---------- GENERAL ---------- */
+/* =========================================================
+   GENERAL
+   ========================================================= */
 
 * {
     box-sizing: border-box;
@@ -25,46 +27,55 @@ body {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-/* ---------- HEADER ---------- */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 header {
     background: #172d3d;
     color: white;
-    padding: 55px 20px;
     text-align: center;
+    padding: 65px 20px 55px;
 }
 
-header .magazine {
+.magazine {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
-    font-size: 52px;
+    font-size: 54px;
     line-height: 1.15;
 }
 
-header .edition {
+.edition {
     font-family: Arial, sans-serif;
     margin-top: 18px;
     font-size: 16px;
     opacity: 0.9;
 }
 
-/* ---------- PAGE ---------- */
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 35px 25px 70px;
+    padding: 35px 25px 75px;
 }
 
-/* ---------- BACK LINK ---------- */
+
+/* =========================================================
+   BACK LINK
+   ========================================================= */
 
 .back {
     margin-bottom: 35px;
@@ -75,56 +86,87 @@ header .edition {
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
+    font-size: 17px;
 }
 
-/* ---------- ARTICLE INFO ---------- */
+.back a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   ARTICLE INFORMATION
+   ========================================================= */
 
 .article-info {
     background: white;
-    padding: 30px 35px;
-    border-radius: 14px;
+    padding: 32px 38px;
+    border-radius: 16px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.06);
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .article-info p {
-    margin: 8px 0;
+    margin: 9px 0;
     font-family: Arial, sans-serif;
     color: #555;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
-/* ---------- TRANSLATION NOTICE ---------- */
+.article-info strong {
+    color: #172d3d;
+}
+
+
+/* =========================================================
+   TRANSLATION INFORMATION
+   ========================================================= */
 
 .translation-notice {
-    background: #eef3f5;
-    border-left: 5px solid #172d3d;
-    padding: 22px 25px;
-    margin-bottom: 45px;
-    border-radius: 6px;
+    background: #172d3d;
+    color: white;
+    padding: 35px 40px;
+    margin-bottom: 35px;
+    border-radius: 16px;
     font-family: Arial, sans-serif;
-    color: #444;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* ---------- ARTICLE ---------- */
+.translation-notice h2 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.translation-notice p {
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+.status {
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
 
 .article {
     background: white;
-    padding: 55px 60px;
+    padding: 60px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.07);
 }
 
-/* ---------- ARTICLE HEADING ---------- */
-
 .article h2 {
-    font-size: 34px;
+    font-size: 36px;
     color: #172d3d;
     margin-top: 0;
     margin-bottom: 40px;
+    line-height: 1.2;
 }
-
-/* ---------- ARTICLE TEXT ---------- */
 
 .article p {
     font-size: 20px;
@@ -132,7 +174,10 @@ header .edition {
     margin: 0 0 25px;
 }
 
-/* ---------- QUOTATIONS ---------- */
+
+/* =========================================================
+   QUOTATIONS
+   ========================================================= */
 
 .article blockquote {
     margin: 35px 0;
@@ -144,17 +189,23 @@ header .edition {
     font-style: italic;
 }
 
-/* ---------- P.S. ---------- */
+
+/* =========================================================
+   SPECIAL ARTICLE TEXT
+   ========================================================= */
 
 .ps {
-    margin-top: 45px !important;
+    margin-top: 50px !important;
     padding-top: 30px;
     border-top: 1px solid #ddd;
     font-style: italic;
     color: #666;
 }
 
-/* ---------- FOOTER ---------- */
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
     background: #172d3d;
@@ -168,7 +219,10 @@ footer p {
     margin: 6px;
 }
 
-/* ---------- MOBILE ---------- */
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -177,11 +231,19 @@ footer p {
     }
 
     header h1 {
-        font-size: 36px;
+        font-size: 37px;
     }
 
     .container {
         padding: 25px 15px 50px;
+    }
+
+    .article-info {
+        padding: 25px;
+    }
+
+    .translation-notice {
+        padding: 28px 25px;
     }
 
     .article {
@@ -189,7 +251,7 @@ footer p {
     }
 
     .article h2 {
-        font-size: 28px;
+        font-size: 29px;
     }
 
     .article p {
@@ -199,10 +261,6 @@ footer p {
 
     .article blockquote {
         font-size: 18px;
-    }
-
-    .article-info {
-        padding: 25px;
     }
 
 }
@@ -215,7 +273,9 @@ footer p {
 <body>
 
 
-<!-- HEADER -->
+<!-- =======================================================
+     HEADER
+     ======================================================= -->
 
 <header>
 
@@ -237,18 +297,22 @@ TUMARA TOH SAHI HAI YAAR
 <div class="container">
 
 
-<!-- BACK -->
+<!-- =======================================================
+     BACK TO 2026
+     ======================================================= -->
 
 <div class="back">
 
-<a href="index.html?v=3">
+<a href="../2026.html">
 ← Back to 2026 Edition
 </a>
 
 </div>
 
 
-<!-- ARTICLE INFORMATION -->
+<!-- =======================================================
+     ARTICLE INFORMATION
+     ======================================================= -->
 
 <div class="article-info">
 
@@ -257,47 +321,62 @@ TUMARA TOH SAHI HAI YAAR
 </p>
 
 <p>
-<strong>Edition:</strong> BROCAS' Broadcast · 2026
+<strong>Original publication:</strong>
+BROCAS' Broadcast · 2026
 </p>
 
 <p>
-<strong>Article type:</strong> Personal Essay
+<strong>Article type:</strong>
+Personal Essay
 </p>
 
 <p>
-<strong>Original language:</strong> Hindi / Hinglish
+<strong>Original language:</strong>
+Hindi / Hinglish
 </p>
 
 <p>
-<strong>Translation:</strong> English translation
+<strong>Digital version:</strong>
+Complete English translation
 </p>
 
 </div>
 
 
-<!-- TRANSLATION NOTICE -->
+<!-- =======================================================
+     TRANSLATION NOTICE
+     ======================================================= -->
 
 <div class="translation-notice">
 
-<strong>Digital Translation Archive</strong>
+<h2>
+Digital Translation Archive
+</h2>
 
-<br><br>
-
+<p>
 This page is part of the BROCAS' Broadcast Digital Translation
-Archive and is intended to preserve the complete English
-translation of the original magazine article.
+Archive and is intended to provide the complete English
+translation of the article published in the physical edition
+of BROCAS' Broadcast.
+</p>
 
-<br><br>
+<p class="status">
 
-<strong>Current status:</strong>
-The final English translation is yet to be inserted.
-The original supplied article text is displayed below for
-archival preparation.
+<strong>Translation status:</strong><br>
+
+The final English translation will be placed on this page when
+provided by the translator. The article text currently displayed
+below is the supplied original article and is being used for
+archive preparation.
+
+</p>
 
 </div>
 
 
-<!-- ARTICLE -->
+<!-- =======================================================
+     ARTICLE
+     ======================================================= -->
 
 <article class="article">
 
@@ -314,6 +393,7 @@ neighbour, or that one uncle who meets you after one year and
 still asks, “Toh beta, doctor ban gaye?”
 </p>
 
+
 <blockquote>
 “Bas uncle, thoda sa aur.”
 </blockquote>
@@ -328,19 +408,23 @@ about whether this vast amount of information was ever meant to
 be retained in these puny brains of humans.
 </p>
 
+
 <p>
 This is about something else.
 </p>
+
 
 <p>
 This is about being a Gen-Z medical student. Because being Gen Z
 already feels like living life in fast forward.
 </p>
 
+
 <p>
 Everyone is travelling, making reels, going to concerts and
 finding new cafés.
 </p>
+
 
 <p>
 Everyone is dating, gaming, creating content, doing photography,
@@ -349,31 +433,38 @@ their profession. And then there is us. We open Instagram at
 1:17 a.m. and see someone our age saying,
 </p>
 
+
 <blockquote>
 “Guys, thanks to Mahadev, I’m finally an American citizen now!”
 </blockquote>
+
 
 <p>
 What? What the fuss?
 </p>
 
+
 <blockquote>
 “American citizenship?”
 </blockquote>
+
 
 <p>
 And here it’s me, jisne abhi tak capital bhi ni dekha, only
 dreamt of securing a seat at AIIMS Delhi.
 </p>
 
+
 <p>
 One day I’m definitely going to throw away my phone if it keeps
 on reminding me of my postponed life "coming soon”.
 </p>
 
+
 <p>
 And no, I am not saying medicine is terrible. It isn’t.
 </p>
+
 
 <p>
 Most of us genuinely want to become good doctors. We chose this.
@@ -383,20 +474,24 @@ someone might come to you at the worst point of their life and
 trust you to make things better.
 </p>
 
+
 <p>
 That part is worth it.
 </p>
+
 
 <p>
 But sometimes, we do get tired of the price we have to pay for
 choosing it.
 </p>
 
+
 <p>
 Because while everyone else seems to be entering adulthood, we
 are still standing at the entrance with a stethoscope in one hand
 and an admit card in the other.
 </p>
+
 
 <p>
 Take money, for example. That damn friend of 'tumara to Sahi h
@@ -406,9 +501,11 @@ if it comes into effect. For now the greatest investment made by
 me is the Marrow subscription that I bought last year.
 </p>
 
+
 <blockquote>
 “Papa: UPI kar du?”
 </blockquote>
+
 
 <p>
 Many of us are still being financially supported by the same
@@ -416,19 +513,23 @@ people who have been paying for our lives since childhood. And
 yes, we know how lucky we are.
 </p>
 
+
 <p>
 But there is still a small dream that a lot of young men have,
 i.e. buying a bike with his own money. Not because we desperately
 need another bike. But because that bike would quietly say,
 </p>
 
+
 <blockquote>
 “I bought this.”
 </blockquote>
 
+
 <p>
 No father’s money. No mother’s savings. No “I’ll pay you back.”
 </p>
+
 
 <p>
 Just you, your salary and probably an EMI that will follow you for
@@ -436,10 +537,12 @@ the next three years. For a medical student, that moment feels
 very far away.
 </p>
 
+
 <p>
 At this point, the bike is no longer a vehicle; it is a
 long-term academic project.
 </p>
+
 
 <p>
 And then there are our parents. They have dreams for us that we
@@ -450,6 +553,7 @@ of that too. But who knows what lies in the future, a good/stable
 marriage or a 'BLUE DRUM'?
 </p>
 
+
 <p>
 And then there’s the beautiful little monster called the
 competitive exam. We don’t just study medicine anymore. We study
@@ -457,60 +561,73 @@ medicine while thinking about the next exam. Every good day has
 an asterisk.
 </p>
 
+
 <blockquote>
 “I studied really well today.” Nice. “But how much of this will
 actually help in INI-CET?”
 </blockquote>
 
+
 <p>
 Every bad day has an even bigger asterisk.
 </p>
+
 
 <blockquote>
 “I wasted the whole day.” Congratulations. “Now what about
 INI-CET?”
 </blockquote>
 
+
 <p>
 The exam hasn’t even happened yet, and somehow it has already
 ruined several evenings.
 </p>
+
 
 <p>
 And the funniest part? We are preparing for an exam whose reward
 is…
 </p>
 
+
 <blockquote>
 “MORE YEARS OF STUDYING”
 </blockquote>
 
+
 <p>
 It’s almost like the game designers forgot to add the ending.
 </p>
+
 
 <p>
 MBBS → NEET-PG/INI-CET → Residency → Fellowship → Superspeciality
 → Consultant.
 </p>
 
+
 <p>
 At some point, someone should probably ask.
 </p>
+
 
 <blockquote>
 “When exactly do we unlock the life expansion pack?”
 </blockquote>
 
+
 <p>
 Dating deserves its own paragraph.
 </p>
+
 
 <p>
 Because apparently being a medical student is not enough of a
 full-time commitment. You are also expected to maintain a
 relationship. Now imagine this.
 </p>
+
 
 <blockquote>
 “Hey, want to go out tonight?” “Sure.”<br>
@@ -520,9 +637,11 @@ relationship. Now imagine this.
 “Next week?” “Pre-PG preparation.”
 </blockquote>
 
+
 <blockquote>
 “Okay. When are you actually free?”
 </blockquote>
+
 
 <p>
 And then you realise you have been in a relationship with your
@@ -530,10 +649,12 @@ timetable for six years. At least the timetable is toxic but
 consistent.
 </p>
 
+
 <p>
 And perhaps the funniest part is that none of this is visible
 from the outside.
 </p>
+
 
 <p>
 To everyone else, you’re doing great. You’re a medical student.
@@ -541,9 +662,11 @@ You’re going to become a doctor. You’ll earn well. You’ll be
 respected. You’ll have a stable career.
 </p>
 
+
 <p>
 Basically, you’ve “made it”. Hushhhh
 </p>
+
 
 <p>
 What I think maybe the real problem is not that we are missing
@@ -551,25 +674,30 @@ out. Maybe it is that we are constantly aware that we are missing
 out.
 </p>
 
+
 <p>
 Gen millennials didn’t have Instagram showing them what everyone
 else was doing at two in the morning. We do. We compare them.
 </p>
+
 
 <p>
 Someone is somehow 23, financially independent, travelling the
 world and maintaining visible abs.
 </p>
 
+
 <p>
 And we are sitting in the library at 11:45 p.m. trying to remember
 whether the answer was hydrocele or hernia.
 </p>
 
+
 <p>
 social media has given our generation the unique privilege of
 feeling behind while we are still running.
 </p>
+
 
 <p>
 But maybe this is the part we don’t talk about enough. Maybe we
@@ -580,6 +708,7 @@ travelled at 20 may have memories we don’t have, but we may have
 experiences they don’t.
 </p>
 
+
 <p>
 The person who bought a bike at 22 may have bought it with his
 first salary. Maybe we will buy ours at 28, with our own name on
@@ -587,10 +716,12 @@ the payslip. And maybe that will make it even more special.
 Because it was never about the bike.
 </p>
 
+
 <p>
 Maybe one day, we might actually become everything we spent our
 youth preparing to become.
 </p>
+
 
 <p>
 And when that day comes, I just hope we don’t look back and
@@ -598,10 +729,12 @@ realise that we were so busy preparing for life that we forgot to
 have one.
 </p>
 
+
 <p>
 Even though I hope if you ask the person standing outside all of
 this, he will probably still look at me, smile and say,
 </p>
+
 
 <blockquote>
 “Tumara toh sahi hai yaar.”
@@ -619,6 +752,10 @@ Pandit Boy and ninja hattori
 
 </div>
 
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
 
 <footer>
 
